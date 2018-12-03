@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 class ChatbotDialog extends Component {
     updateDialog(message, key) {
         return (
-            <div key={key}>
+            <div key={key} className='dialog-balloon'>
                 {
                     message.author === 'user' && <span>
                         <Badge color='primary'> Você: </Badge>
@@ -16,7 +16,7 @@ class ChatbotDialog extends Component {
 
                 {
                     message.author === 'picklebot' && <span>
-                        <Badge color='success'> Picklebot: </Badge>
+                        <Badge color='success'> Portal de Prevenção à Dengue: </Badge>
                         <Alert color='success'> {message.text} </Alert>
                     </span>
 

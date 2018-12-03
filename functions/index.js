@@ -4,13 +4,6 @@ require('dotenv').config();
 
 const cors = require('cors')({ origin: true });
 
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//     response.send("Hello from Firebase!");
-// });
-
 const chatbot = new watson({
     username: process.env.USERNAME,
     password: process.env.PASSWORD,

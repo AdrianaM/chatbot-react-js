@@ -9,7 +9,7 @@
 
 .home {
   grid-area: home;
-  background-color: #aaa;
+  padding: 20px;
 }
 
 .chatbot {
@@ -33,9 +33,9 @@
 .content {
   display: grid;
   grid-template-areas: 
-    'header header header'
-    'home home chatbot'
-    'footer footer footer';
+    'header header header header'
+    'home home home chatbot'
+    'footer footer footer footer';
   }
 
 
